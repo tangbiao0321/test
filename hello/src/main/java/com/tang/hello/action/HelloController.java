@@ -13,7 +13,7 @@ public class HelloController {
 	}
 	
 	@RequestMapping("/index")
-	public String index(@PathVariable String name){
+	public String index(){
 		return "root index";
 	}
 }
