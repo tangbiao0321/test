@@ -11,4 +11,9 @@ public class HelloController {
 	public String hello(@PathVariable String name){
 		return "Hello , "+ name;
 	}
+	
+	@RequestMapping("/")
+	public String index(@PathVariable String name){
+		return "root index";
+	}
 }
