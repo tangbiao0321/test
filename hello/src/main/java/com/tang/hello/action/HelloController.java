@@ -16,4 +16,5 @@ public class HelloController {
 	public String index(){
 		return "root index";
 	}
+	
 }
