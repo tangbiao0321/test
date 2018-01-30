@@ -1,5 +1,7 @@
 package com.tang.hello;
 
+import com.tang.hello.action.HelloController;
+
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
@@ -34,5 +36,11 @@ public class AppTest
     public void testApp()
     {
         assertTrue( true );
+    }
+    
+    public void testHello()
+    {
+    	boolean flag = new HelloController().index().contentEquals("root index");
+        assertTrue( flag );
     }
 }
